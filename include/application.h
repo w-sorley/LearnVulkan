@@ -1,6 +1,7 @@
 #ifndef APPLICATION_H
 #define APPLICATION_H
 #include <iostream>
+#include <vector>
 
 #include <vulkan/vulkan.h>
 #include <glm/vec4.hpp>
@@ -11,6 +12,7 @@ class VulkanApplication
 {
 private:
     GLFWwindow* window;
+    VkInstance instance;
     const uint32_t WIDTH = 800;
     const uint32_t HEIGHT = 600;
 
@@ -18,6 +20,7 @@ private:
     void init();
     void mainLoop();
     void cleanup();
+    void createInstance();
 public:
     VulkanApplication(/* args */);
     ~VulkanApplication();
