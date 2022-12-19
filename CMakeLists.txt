@@ -16,5 +16,5 @@ link_libraries(${GLFW_LINK} ${VULKAN_1_LINK} ${VULKAN_LINK})
 set(ENV{VK_ICD_FILENAMES} /Users/w_sorley/SDK/VulkanSDK/1.3.236.0/macOS/share/vulkan/icd.d/MoltenVK_icd.json)
 set(ENV{VK_LAYER_PATH} /Users/w_sorley/SDK/VulkanSDK/1.3.236.0/macOS/vulkan/explicit_layer.d)
 
-set(SOURCES main.cpp)
+set(SOURCES main.cpp application.cpp)
 add_executable(output ${SOURCES})
